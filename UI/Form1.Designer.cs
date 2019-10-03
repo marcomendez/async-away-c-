@@ -35,7 +35,7 @@
             // 
             // readFileBtn
             // 
-            this.readFileBtn.Location = new System.Drawing.Point(239, 166);
+            this.readFileBtn.Location = new System.Drawing.Point(232, 161);
             this.readFileBtn.Name = "readFileBtn";
             this.readFileBtn.Size = new System.Drawing.Size(240, 74);
             this.readFileBtn.TabIndex = 0;

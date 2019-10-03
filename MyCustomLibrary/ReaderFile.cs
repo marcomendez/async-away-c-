@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace MyCustomLibrary
 {
@@ -8,14 +7,11 @@ namespace MyCustomLibrary
     {
         public static IEnumerable<string> ReadFile(string pathFile)
         {
-            var sr = File.OpenText(pathFile);
-            
-            while (!sr.EndOfStream)
+            var allText = File.OpenText(pathFile);
+            while (!allText.EndOfStream)
             {
-                yield return sr.ReadLine();
-                
+                yield return allText.ReadLine();
             }
-            
         }
     }
 }

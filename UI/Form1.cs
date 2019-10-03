@@ -41,32 +41,38 @@ namespace UI
             }
             label1.Text = "Delay : " + time;
         }
-
-
-
-
-
-
-
-
-
-
-        //int counter = 0;
-
-        //int quantityTime = 1000;
-
-        //private async void button1_Click(object sender, EventArgs e)
-        //{
-        //    counter++;
-        //    button1.Text = "Long task started" + counter.ToString();
-
-        //    await LongTask.Start(quantityTime, button1.Text);
-        //    quantityTime += 2000;
-
-        //    counter--;
-        //    // button1.Text = "Long task end" + counter.ToString();
-        //}
-
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//int counter = 0;
+
+//int quantityTime = 1000;
+
+//private async void button1_Click(object sender, EventArgs e)
+//{
+//    counter++;
+//    button1.Text = "Long task started" + counter.ToString();
+
+//    await LongTask.Start(quantityTime, button1.Text);
+//    quantityTime += 2000;
+
+//    counter--;
+//    // button1.Text = "Long task end" + counter.ToString();
+//}

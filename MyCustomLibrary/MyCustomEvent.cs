@@ -9,13 +9,13 @@ namespace MyCustomLibrary
             bool flag = true;
             while (flag)
             {
-                switch (Console.ReadKey().Key)
+                switch (Console.ReadKey(true).Key)
                 {
                     case ConsoleKey.X:
-                        timer += 1000;
+                        timer -= 500;
                         break;
                     case ConsoleKey.Z:
-                        timer -= 1000;
+                        timer += 500;
                         break;
                     case ConsoleKey.P:
                         isPaused = isPaused == true ? false : true;
@@ -27,8 +27,8 @@ namespace MyCustomLibrary
                         Console.WriteLine(" Key inconect, Please use 'A' to increse and 'B' to desincrese.");
                         break;
                 }
-                timer = timer <= 0 ? 1000 : timer;
-                Console.WriteLine($" Timer updated to {timer / 1000} seconds");
+
+                timer = timer <= 0 ? 100 : timer;
             }
         }
     }

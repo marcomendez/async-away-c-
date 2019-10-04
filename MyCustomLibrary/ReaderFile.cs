@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace MyCustomLibrary
@@ -12,6 +13,12 @@ namespace MyCustomLibrary
             {
                 yield return allText.ReadLine();
             }
+        }
+
+        public static string ReadAll(string pathFile)
+        {
+            var allText = File.OpenText(pathFile);
+            return allText.ReadToEnd();
         }
     }
 }
